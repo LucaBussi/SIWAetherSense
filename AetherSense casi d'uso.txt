@@ -1,0 +1,30 @@
+Caso d'uso UC1: Inserimento nuovo Device (amministratore)
+1. Un Amministratore inserisce username e password nel Sistema. Il Sistema verifica la correttezza dei dati inseriti e autentica l'Amministratore.
+2. L'Amministratore accede alla parte del Sistema relativa al progetto per il quale vuole aggiungere un dispositivo, in modo che questo sia legato a tale progetto.
+3. L'Amministratore seleziona l'attività "Insert new device".
+4. l'Amministratore inserisce il nome, il macAddress, il devEui, il tipo di dispositivo e l'email del proprietario per il dispositivo che vuole inserire, e conferma l'inserimento del dispositivo.
+5. Il Sistema registra le informazioni sul nuovo dispositivo, assegnandogli un identificatore univoco. Da questo momento in poi, l'Utente autenticato a cui corrisponde l'indirizzo email inserito dall'Amministratore potrà visualizzare il dispositivo nella mappa dei dispositivi del progetto a lui legata.
+
+Caso d'uso UC2: Cancellazione dispositivo (amministratore)
+1. Un Amministratore inserisce username e password nel Sistema. Il Sistema verifica la correttezza dei dati inseriti e autentica l'Amministratore.
+2. L'Amministratore accede alla parte del Sistema relativa al progetto per il quale vuole aggiungere un dispositivo, in modo che questo sia legato a tale progetto.
+3. L'Amministratore sceglie un dispositivo appartenente al progetto e selezione l'attività "Delete device".
+4. Il Sistema elimina le informazioni del dispositivo e rimuove qualsiasi associazione esso avesse con altre entità. Da questo momento in poi, l'Utente a cui era associato il dispositivo non potrà più visualizzarlo nella lista dei suoi dispositivi.
+
+
+Caso d'uso UC3: Update Device esistente (utente)
+1. Un Utente inserisce username, password e sceglie il progetto a cui accedere. Il Sistema verifica la correttezza dei dati inseriti e autentica l'Utente.
+2. L'Utente visualizza la mappa con i dispositivi di sua proprietà, ne sceglie uno e clicca sulla voce "Update Device".
+3. Il Sistema mostra una serie di dati personalizzabili del dispositivo selezionato, tra cui il nome, la latitudine e la longitudine.
+4. L'Utente seleziona le voci che desidera modificare, inserisce i nuovi valori e conferma la modifica.
+5. Il Sistema registra le informazioni aggiornate del dispositivo.
+
+Caso d'uso UC4: Lettura lista dispositivi (utente)
+1. Un Utente inserisce username, password e sceglie il progetto a cui accedere. Il Sistema verifica la correttezza dei dati inseriti e autentica l'Utente.
+2. L'Utente visualizza la mappa con i dispositivi di sua proprietà, per ognuno dei quali vengono riportate in tabella le informazioni riguardo il nome, il macAddress e il tipo di dispositivo. Cliccando sul dispositivo può inoltre visualizzare le coordinate del dispositivo.
+
+
+Caso d'uso UC5: Lettura lista dispositivi (amministratore)
+1. Un Amministratore inserisce username, password e sceglie il progetto a cui accedere. Il Sistema verifica la correttezza dei dati inseriti e autentica l'Amministratore.
+2. L'Amministratore visualizza la mappa con tutti i dispositivi del progetto selezionato, per ognuno dei quali vengono riportate in tabella le informazioni riguardo il nome, il macAddress, il devEui, l'email di appartenenza e il tipo di dispositivo. Cliccando sul dispositivo può inoltre visualizzare le coordinate del dispositivo.
+
